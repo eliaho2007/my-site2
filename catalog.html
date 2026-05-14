@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог десертов | Кондитерская Ставрополь</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <nav>
+            <div class="logo">
+                🍰 Сладкая сказка
+                <span>Ставрополь</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="about.html">О нас</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="page-header animate">
+        <h1>🍰 Наши десерты</h1>
+        <p>Созданы с любовью из натуральных ингредиентов</p>
+    </div>
+    
+    <div class="catalog-controls">
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">Все товары</button>
+            <button class="filter-btn" data-filter="cake">Торты</button>
+            <button class="filter-btn" data-filter="pastry">Пирожные</button>
+            <button class="filter-btn" data-filter="cookie">Печенье</button>
+        </div>
+        <div class="sort-control">
+            <label>Сортировать по:</label>
+            <select id="sortSelect">
+                <option value="default">По умолчанию</option>
+                <option value="price-asc">Цена ↑</option>
+                <option value="price-desc">Цена ↓</option>
+                <option value="name">Названию</option>
+            </select>
+        </div>
+    </div>
+    
+    <div class="catalog-grid" id="catalogGrid">
+        <!-- Товары подгрузятся через JS -->
+    </div>
+    
+    <!-- Подвал -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>🍰 Сладкая сказка</h4>
+                <p>Торты и десерты ручной работы</p>
+                <p>г. Ставрополь</p>
+            </div>
+            <div class="footer-section">
+                <h4>📞 Связь с нами</h4>
+                <p>+7 (8652) 12-34-56</p>
+                <p>+7 918 123-45-67 (WhatsApp)</p>
+                <p>info@sweetfairytale.ru</p>
+            </div>
+            <div class="footer-section">
+                <h4>⏰ Режим работы</h4>
+                <p>Ежедневно: 09:00 - 21:00</p>
+                <p>Доставка: до 23:00</p>
+            </div>
+            <div class="footer-section">
+                <h4>📍 Адрес</h4>
+                <p>ул. Маршала Жукова, 15</p>
+                <p>остановка "Дворец детского творчества"</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Кондитерская "Сладкая сказка" — с любовью для Ставрополя</p>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

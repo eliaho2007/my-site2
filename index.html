@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сладкая сказка | Кондитерская Ставрополь</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <nav>
+            <div class="logo">
+                🍰 Сладкая сказка
+                <span>Ставрополь</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="about.html">О нас</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Промо-блок -->
+        <section class="promo-block animate">
+            <h1>🍰 Сладкая сказка Ставрополя</h1>
+            <p>Торты, пирожные и десерты ручной работы. Только натуральные ингредиенты. Доставка по Ставрополю.</p>
+            <div class="promo-stats">
+                <div class="stat">
+                    <span class="stat-number">5+</span>
+                    <span class="stat-label">лет на рынке</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">видов десертов</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">2000+</span>
+                    <span class="stat-label">довольных клиентов</span>
+                </div>
+            </div>
+            <a href="catalog.html" class="btn btn-large">Смотреть каталог</a>
+        </section>
+        
+        <!-- Акции -->
+        <section class="promotions animate">
+            <h2 class="section-title">🍯 Сладкие предложения</h2>
+            <div class="promo-grid">
+                <div class="promo-card">
+                    <div class="promo-icon">🎁</div>
+                    <h3>Акция "Сладкий вторник"</h3>
+                    <p>При заказе от 1500 руб — эклер в подарок!</p>
+                    <small>Действует каждый вторник</small>
+                </div>
+                <div class="promo-card">
+                    <div class="promo-icon">🚚</div>
+                    <h3>Бесплатная доставка</h3>
+                    <p>При заказе от 3000 руб по Ставрополю</p>
+                    <small>В пределах города</small>
+                </div>
+                <div class="promo-card">
+                    <div class="promo-icon">🎂</div>
+                    <h3>Торт имениннику</h3>
+                    <p>Скидка 10% на день рождения</p>
+                    <small>При предъявлении паспорта</small>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Популярные товары (Preview) -->
+        <section class="featured animate">
+            <h2 class="section-title">⭐ Популярное в этом месяце</h2>
+            <div class="catalog-grid" id="featuredGrid">
+                <!-- Товары подгрузятся из JS -->
+            </div>
+        </section>
+        
+        <!-- Калькулятор веса -->
+        <section class="calculator animate">
+            <h3>📏 Калькулятор веса торта</h3>
+            <p>Рассчитайте примерный вес и стоимость будущего торта:</p>
+            <div class="calculator-inputs">
+                <div class="input-group">
+                    <label>Диаметр (см):</label>
+                    <input type="number" id="diameter" value="20" min="10" max="50">
+                </div>
+                <div class="input-group">
+                    <label>Количество ярусов:</label>
+                    <input type="number" id="layers" value="1" min="1" max="3">
+                </div>
+                <div class="input-group">
+                    <label>Сложность декора:</label>
+                    <select id="complexity">
+                        <option value="1">Стандартный</option>
+                        <option value="1.5">Мастика/фигурки</option>
+                        <option value="2">Авторский дизайн</option>
+                    </select>
+                </div>
+            </div>
+            <button id="calcWeightBtn" class="btn">Рассчитать стоимость</button>
+            <div id="weightResult" class="calculator-result"></div>
+        </section>
+        
+        <!-- Отзывы -->
+        <section class="reviews animate">
+            <h2 class="section-title">💬 Наши сладкоежки говорят</h2>
+            <div class="reviews-slider" id="reviewsSlider">
+                <!-- Отзывы из JS -->
+            </div>
+        </section>
+    </main>
+    
+    <!-- Подвал -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>🍰 Сладкая сказка</h4>
+                <p>Торты и десерты ручной работы</p>
+                <p>г. Ставрополь</p>
+            </div>
+            <div class="footer-section">
+                <h4>📞 Связь с нами</h4>
+                <p>+7 (8652) 12-34-56</p>
+                <p>+7 918 123-45-67 (WhatsApp)</p>
+                <p>info@sweetfairytale.ru</p>
+            </div>
+            <div class="footer-section">
+                <h4>⏰ Режим работы</h4>
+                <p>Ежедневно: 09:00 - 21:00</p>
+                <p>Доставка: до 23:00</p>
+            </div>
+            <div class="footer-section">
+                <h4>📍 Адрес</h4>
+                <p>ул. Маршала Жукова, 15</p>
+                <p>остановка "Дворец детского творчества"</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Кондитерская "Сладкая сказка" — с любовью для Ставрополя</p>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
